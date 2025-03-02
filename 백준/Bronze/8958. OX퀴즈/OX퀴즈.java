@@ -17,7 +17,6 @@ public class Main {
         for (int i = 0; i < input.length; i++) {
             char[] chars = input[i].toCharArray();
 
-            boolean flag = false;
             int continuous = 1;
             int result = 0;
             for (char c : chars) {
