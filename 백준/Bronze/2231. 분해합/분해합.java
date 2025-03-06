@@ -11,7 +11,7 @@ public class Main {
 
         for (int i = 0; i <= N; i++) {
             int digit = 0;
-            int num = N;
+            int num = i;
             while (num > 0) {
                 num /= 10;
                 digit++;
