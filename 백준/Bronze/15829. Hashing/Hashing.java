@@ -10,9 +10,11 @@ public class Main {
         int L = Integer.parseInt(br.readLine());
         char[] alphabet = br.readLine().toCharArray();
 
-        long result = 0;
+        long result = 0L;
+        long pow = (long)Math.pow(31, 0);
         for (int i = 0; i < L; i++) {
-            result = (long)((alphabet[i] - 'a' + 1) * Math.pow(31, i) + result) % 1234567891;
+            result = ((alphabet[i] - 'a' + 1L) * pow + result) % 1234567891;
+            pow = pow * 31 % 1234567891;
         }
         bw.write(String.valueOf(result));
         bw.flush();
