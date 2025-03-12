@@ -25,9 +25,13 @@ public class Main {
                     apartment[j][l] = total;
                 }
             }
-
-            bw.write(apartment[k][n - 1] + "\n");
-            bw.flush();
+            result[i] = apartment[k][n - 1];
         }
+
+        for (int i = 0; i < result.length; i++) {
+            bw.write(result[i] + "\n");
+        }
+        bw.flush();
+
     }
 }
